@@ -59,7 +59,7 @@
 			$emails = Array();
 			if (is_array($contacts))
 			{
-				foreach($contacts as $k => $a)
+				foreach(array_keys($contacts) as $k)
 				{
 					$final = end($contacts[$k]);
 					foreach($final as $email)
