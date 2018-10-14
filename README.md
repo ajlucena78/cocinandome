@@ -1,2 +1,2 @@
-# cocinandome
+# cocinandome.es
 Recipe social platform
