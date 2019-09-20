@@ -159,123 +159,123 @@
 							<h2>Informaci&oacute;n nutricional</h2>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="calorias" id="calorias" value="1" <?php 
-										if ($plato->calorias) { echo 'checked'; } ?> />
+										if ($plato->calorias()) { echo 'checked'; } ?> />
 								<label for="calorias">Calor&iacute;as</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="proteinas" id="proteinas" value="1" <?php 
-										if ($plato->proteinas) { echo 'checked'; } ?> />
+										if ($plato->proteinas()) { echo 'checked'; } ?> />
 								<label for="proteinas">Proteinas</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="hidratos_carbono" id="hidratos_carbono" 
 										value="1" <?php 
-										if ($plato->hidratos_carbono) { echo 'checked'; } ?> />
+										if ($plato->hidratos_carbono()) { echo 'checked'; } ?> />
 								<label for="hidratos_carbono">Hidratos de carbono</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="fibra" id="fibra" value="1" <?php 
-										if ($plato->fibra) { echo 'checked'; } ?> />
+										if ($plato->fibra()) { echo 'checked'; } ?> />
 								<label for="fibra">Fibra</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="lipidos" id="lipidos" value="1" <?php 
-										if ($plato->lipidos) { echo 'checked'; } ?> />
+										if ($plato->lipidos()) { echo 'checked'; } ?> />
 								<label for="lipidos">L&iacute;pidos</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="colesterol" id="colesterol" value="1" <?php 
-										if ($plato->colesterol) { echo 'checked'; } ?> />
+										if ($plato->colesterol()) { echo 'checked'; } ?> />
 								<label for="colesterol">Colesterol</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="agp" id="agp" value="1" <?php 
-										if ($plato->agp) { echo 'checked'; } ?> />
+										if ($plato->agp()) { echo 'checked'; } ?> />
 								<label for="agp">AGP (&Aacute;cidos grasos poliinsaturados)</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="ags" id="ags" value="1" <?php 
-										if ($plato->ags) { echo 'checked'; } ?> />
+										if ($plato->ags()) { echo 'checked'; } ?> />
 								<label for="ags">AGS (&Aacute;cidos grasos saturados)</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="agm" id="agm" value="1" <?php 
-										if ($plato->agm) { echo 'checked'; } ?> />
+										if ($plato->agm()) { echo 'checked'; } ?> />
 								<label for="agm">AGM (&Aacute;cidos grasos monosaturados)</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="vitamina_a" id="vitamina_a" value="1" <?php 
-										if ($plato->vitamina_a) { echo 'checked'; } ?> />
+										if ($plato->vitamina_a()) { echo 'checked'; } ?> />
 								<label for="vitamina_a">Vitamina A</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="vitamina_b1" id="vitamina_b1" value="1" <?php 
-										if ($plato->vitamina_b1) { echo 'checked'; } ?> />
+										if ($plato->vitamina_b1()) { echo 'checked'; } ?> />
 								<label for="vitamina_b1">Vitamina B1</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="vitamina_b2" id="vitamina_b2" value="1" <?php 
-										if ($plato->vitamina_b2) { echo 'checked'; } ?> />
+										if ($plato->vitamina_b2()) { echo 'checked'; } ?> />
 								<label for="vitamina_b2">Vitamina B2</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="vitamina_b6" id="vitamina_b6" value="1" <?php 
-										if ($plato->vitamina_b6) { echo 'checked'; } ?> />
+										if ($plato->vitamina_b6()) { echo 'checked'; } ?> />
 								<label for="vitamina_b6">Vitamina B6</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="vitamina_b12" id="vitamina_b12" value="1" <?php 
-										if ($plato->vitamina_b12) { echo 'checked'; } ?> />
+										if ($plato->vitamina_b12()) { echo 'checked'; } ?> />
 								<label for="vitamina_b12">Vitamina B12</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="vitamina_c" id="vitamina_c" value="1" <?php 
-										if ($plato->vitamina_c) { echo 'checked'; } ?> />
+										if ($plato->vitamina_c()) { echo 'checked'; } ?> />
 								<label for="vitamina_c">Vitamina C</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="vitamina_d" id="vitamina_d" value="1" <?php 
-										if ($plato->vitamina_d) { echo 'checked'; } ?> />
+										if ($plato->vitamina_d()) { echo 'checked'; } ?> />
 								<label for="vitamina_d">Vitamina D</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="hierro" id="hierro" value="1" <?php 
-										if ($plato->hierro) { echo 'checked'; } ?> />
+										if ($plato->hierro()) { echo 'checked'; } ?> />
 								<label for="hierro">Hierro</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="calcio" id="calcio" value="1" <?php 
-										if ($plato->calcio) { echo 'checked'; } ?> />
+										if ($plato->calcio()) { echo 'checked'; } ?> />
 								<label for="calcio">Calcio</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="sodio" id="sodio" value="1" <?php 
-										if ($plato->sodio) { echo 'checked'; } ?> />
+										if ($plato->sodio()) { echo 'checked'; } ?> />
 								<label for="sodio">Sodio</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="acido_folico" id="acido_folico" value="1" <?php 
-										if ($plato->acido_folico) { echo 'checked'; } ?> />
+										if ($plato->acido_folico()) { echo 'checked'; } ?> />
 								<label for="acido_folico">&Aacute;cido f&oacute;lico</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="retinol" id="retinol" value="1" <?php 
-										if ($plato->retinol) { echo 'checked'; } ?> />
+										if ($plato->retinol()) { echo 'checked'; } ?> />
 								<label for="retinol">Retinol</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="yodo" id="yodo" value="1" <?php 
-										if ($plato->yodo) { echo 'checked'; } ?> />
+										if ($plato->yodo()) { echo 'checked'; } ?> />
 								<label for="yodo">Yodo</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="potasio" id="potasio" value="1" <?php 
-										if ($plato->potasio) { echo 'checked'; } ?> />
+										if ($plato->potasio()) { echo 'checked'; } ?> />
 								<label for="potasio">Potasio</label>
 							</div>
 							<div style="width: 33%;" class="a_la_izquierda">
 								<input type="checkbox" name="fosforo" id="fosforo" value="1" <?php 
-										if ($plato->fosforo) { echo 'checked'; } ?> />
+										if ($plato->fosforo()) { echo 'checked'; } ?> />
 								<label for="fosforo">F&oacute;sforo</label>
 							</div>
 							<div class="separador"></div>

@@ -369,53 +369,53 @@ class PlatoService extends Service
 				$sql .= ')';
 			}
 		}
-		if ($plato->calorias)
+		if ($plato->calorias())
 			$sql .= ' and pla.calorias > 0';
-		if ($plato->proteinas)
+		if ($plato->proteinas())
 			$sql .= ' and pla.proteinas > 0';
-		if ($plato->hidratos_carbono)
+		if ($plato->hidratos_carbono())
 			$sql .= ' and pla.hidratos_carbono > 0';
-		if ($plato->fibra)
+		if ($plato->fibra())
 			$sql .= ' and pla.fibra > 0';
-		if ($plato->lipidos)
+		if ($plato->lipidos())
 			$sql .= ' and pla.lipidos > 0';
-		if ($plato->colesterol)
+		if ($plato->colesterol())
 			$sql .= ' and pla.colesterol > 0';
-		if ($plato->agp)
+		if ($plato->agp())
 			$sql .= ' and pla.agp > 0';
-		if ($plato->ags)
+		if ($plato->ags())
 			$sql .= ' and pla.ags > 0';
-		if ($plato->agm)
+		if ($plato->agm())
 			$sql .= ' and pla.agm > 0';
-		if ($plato->vitamina_a)
+		if ($plato->vitamina_a())
 			$sql .= ' and pla.vitamina_a > 0';
-		if ($plato->vitamina_b1)
+		if ($plato->vitamina_b1())
 			$sql .= ' and pla.vitamina_b1 > 0';
-		if ($plato->vitamina_b2)
+		if ($plato->vitamina_b2())
 			$sql .= ' and pla.vitamina_b2 > 0';
-		if ($plato->vitamina_b6)
+		if ($plato->vitamina_b6())
 			$sql .= ' and pla.vitamina_b6 > 0';
-		if ($plato->vitamina_b12)
+		if ($plato->vitamina_b12())
 			$sql .= ' and pla.vitamina_b12 > 0';
-		if ($plato->vitamina_c)
+		if ($plato->vitamina_c())
 			$sql .= ' and pla.vitamina_c > 0';
-		if ($plato->vitamina_d)
+		if ($plato->vitamina_d())
 			$sql .= ' and pla.vitamina_d > 0';
-		if ($plato->hierro)
+		if ($plato->hierro())
 			$sql .= ' and pla.hierro > 0';
-		if ($plato->calcio)
+		if ($plato->calcio())
 			$sql .= ' and pla.calcio > 0';
-		if ($plato->sodio)
+		if ($plato->sodio())
 			$sql .= ' and pla.sodio > 0';
-		if ($plato->acido_folico)
+		if ($plato->acido_folico())
 			$sql .= ' and pla.acido_folico > 0';
-		if ($plato->retinol)
+		if ($plato->retinol())
 			$sql .= ' and pla.retinol > 0';
-		if ($plato->yodo)
+		if ($plato->yodo())
 			$sql .= ' and pla.yodo > 0';
-		if ($plato->potasio)
+		if ($plato->potasio())
 			$sql .= ' and pla.potasio > 0';
-		if ($plato->fosforo)
+		if ($plato->fosforo())
 			$sql .= ' and pla.fosforo > 0';
 		return $sql;
 	}
@@ -477,7 +477,7 @@ class PlatoService extends Service
 	private function sql_platos_usuario(Usuario $usuario)
 	{
 		$sql = 'pla.publico is true or pla.id_usuario in (\'' . $usuario->id_usuario . '\'';
-		if (count($usuario->amigos > 0))
+		if ($usuario->amigos)
 		{
 			foreach ($usuario->amigos as $id_amigo)
 			{

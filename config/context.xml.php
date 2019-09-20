@@ -8,7 +8,7 @@
 	<email>info@cocinandome.es</email>
 	<!-- Origen de datos -->
     <db>
-        <url value="mysql:dbname=dbname;host=localhost;charset=UTF8" />
+        <url value="mysql:dbname=cocinandome;host=localhost;charset=UTF8" />
         <username value="dbusername" />
         <password value="dbpassword" />
     </db>
